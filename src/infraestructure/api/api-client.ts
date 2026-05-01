@@ -2,7 +2,7 @@ import axios from "axios";
 import TokenStorage from "../cookies/cookie-storage";
 
 export const apiClient = axios.create({
-  baseURL: "https://backos-production.up.railway.app/",
+  baseURL: "https://backos-production.up.railway.app/api/",
   timeout: parseInt(process.env.NEXT_PUBLIC_API_TIMEOUT || "30000", 10),
   headers: {
     "Content-Type": "application/json",
